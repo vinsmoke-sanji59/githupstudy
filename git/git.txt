@@ -1,0 +1,56 @@
+22005@DESKTOP-PPT3JDN MINGW64 ~/.ssh
+$ ssh-keygen -t rsa -C "2200591859@qq.com" -f "githup_id_rsa"
+Generating public/private rsa key pair.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in githup_id_rsa
+Your public key has been saved in githup_id_rsa.pub
+The key fingerprint is:
+SHA256:YTkGLkcBGDnOQD7wF13zSAdkCA10Jyv5eszihTRv/Qk 2200591859@qq.com
+The key's randomart image is:
++---[RSA 3072]----+
+|o..=***=O..      |
+|+.+  *+B *       |
+| *..= + B .      |
+|  +. = o o       |
+|    o . S        |
+|   . B .         |
+|    + B E        |
+|   . =   o .     |
+|    .     o      |
++----[SHA256]-----+
+//查看是否配置成功
+22005@DESKTOP-PPT3JDN MINGW64 ~/.ssh
+$  ssh -t git@githup.com
+
+
+
+
+22005@DESKTOP-PPT3JDN MINGW64 /f/gitcode
+$ mkdir githup
+
+22005@DESKTOP-PPT3JDN MINGW64 /f/gitcode
+$ cd githup
+
+22005@DESKTOP-PPT3JDN MINGW64 /f/gitcode/githup
+$ git init
+Initialized empty Git repository in F:/gitcode/githup/.git/
+
+22005@DESKTOP-PPT3JDN MINGW64 /f/gitcode/githup (master)
+$ git remote add origin https://github.com/vinsomke-sanji/githupstudy.git
+
+22005@DESKTOP-PPT3JDN MINGW64 /f/gitcode/githup (master)
+$ git add .
+
+22005@DESKTOP-PPT3JDN MINGW64 /f/gitcode/githup (master)
+$ git commit -m "git notes"
+[master (root-commit) dccc9f9] git notes
+ 1 file changed, 809 insertions(+)
+ create mode 100644 "git\345\237\272\347\241\200.md"
+
+22005@DESKTOP-PPT3JDN MINGW64 /f/gitcode/githup (master)
+$ git push origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Logon failed, use ctrl+c to cancel basic credential prompt.
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/vinsomke-sanji/githupstudy.git/'
